@@ -1,0 +1,15 @@
+实现了Fedora虚拟机的全屏显示与网络连接，下面教你设置共享文件夹(很有用~)
+ 
+    共享文件夹就是使主系统和虚拟机能彼此共享文件。以下是具体设置步骤：
+ 
+    1. 在主系统上设一个目录，作为共享目录(其实就是建一个普通文件夹用于共享，我是直接将整个D盘共享，所以这一步可跳过)
+
+    2.在VirtualBox上，如果Fedora虚拟机未启动，则在设置->数据空间 中指定相应的共享文件夹(我的为D:/)，且要指定其映射在Fedora中的名字，默认是和你的目录名一样，我这里设为Vista_D。具体的当打开的对话框时就看得很清楚。如果Fedora虚拟机已经启动，则在设备->分配数据空间  中进行同样的设置。
+
+    3.打开Fedora的终端，在root的权限下执行如下命令：
+       ① #mkdir /share  //创建一个目录来挂载共享文件夹(我这里是在根目录下建share文件夹),当然你可以在任何地方创建一个目录。
+      
+       ②然后运行命令：mount -t vboxsf [-o OPTIONS] sharename mountpoint。这里sharename就是我上面提到的映射在Fedora中的名字,mountpoint就是指你想把主系统的共享文件夹挂载在Fedora的什么地方。按照我前面的设置，这里的代码就为： #sudo mount -t vboxsf Vista_D /share 
+
+
+sudo mount -t vboxsf E share 

@@ -1,0 +1,21 @@
+0.  How many different colors does each format support?
+        There are also different colour depths(palettes): Indexed color and Direct color
+            With Indexed it means that the 
+1.  Which of these formats supports animation?
+2.  What’s the difference between lossy and lossless compression?
+3.  Which of these formats is lossy-compressed?
+4.  What happens, technically speaking, when a file is deleted on a FAT file system?
+5.  What can someone like you do to ensure (with high probability) that files you delete cannot be recovered?
+6.  TODO
+7.  TODO
+8.  TODO
+9.  TODO
+10. TODO
+11. TODO
+12. TODO
+13. TODO
+14. TODO
+15. TODO
+16. TODO
+17. TODO
+18. TODO
